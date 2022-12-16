@@ -2,7 +2,7 @@
   <head>
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
+  <body onmouseover="clearText()">
     <div class="container">
       <div class="team">
         <h3 class="home">HOME</h3>
@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="team">
-        <h3 class="away">GUEST</h3>
+        <h3 class="away">AWAY</h3>
         <div class="score">
           <h1 id="away-points">0</h1>
         </div>
@@ -35,6 +35,9 @@
     </div>
     <div class="reset-div">
       <button id="reset" onclick="reset()">Reset</button>
+    </div>
+    <div class="word-box">
+      <p id="points-words"></p>
     </div>
     <script src="index.js"></script>
   </body>
