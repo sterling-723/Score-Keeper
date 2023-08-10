@@ -1,44 +1,60 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body onmouseover="clearText()">
-    <div class="container">
-      <div class="team">
-        <h3 class="home">HOME</h3>
-        <div class="score">
-          <h1 id="home-points">0</h1>
-        </div>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body onmouseover="clearText()">
+        <div class="container">
+            <div class="team">
+                <h3 class="home">HOME</h3>
+                <div class="score">
+                    <h1 id="home-points">0</h1>
+                </div>
 
-        <div class="points">
-          <button class="plus" id="one-home" onclick="addOneHome()">+1</button>
-          <button class="plus" id="two-home" onclick="addTwoHome()">+2</button>
-          <button class="plus" id="three-home" onclick="addThreeHome()">
-            +3
-          </button>
-        </div>
-      </div>
-      <div class="team">
-        <h3 class="away">AWAY</h3>
-        <div class="score">
-          <h1 id="away-points">0</h1>
-        </div>
+                <div class="points">
+                    <button class="plus" id="one-home" onclick="addOneHome()">
+                        +1
+                    </button>
+                    <button class="plus" id="two-home" onclick="addTwoHome()">
+                        +2
+                    </button>
+                    <button
+                        class="plus"
+                        id="three-home"
+                        onclick="addThreeHome()"
+                    >
+                        +3
+                    </button>
+                </div>
+            </div>
+            <div class="team">
+                <h3 class="away">AWAY</h3>
+                <div class="score">
+                    <h1 id="away-points">0</h1>
+                </div>
 
-        <div class="points">
-          <button class="plus" id="one-away" onclick="addOneAway()">+1</button>
-          <button class="plus" id="two-away" onclick="addTwoAway()">+2</button>
-          <button class="plus" id="three-away" onclick="addThreeAway()">
-            +3
-          </button>
+                <div class="points">
+                    <button class="plus" id="one-away" onclick="addOneAway()">
+                        +1
+                    </button>
+                    <button class="plus" id="two-away" onclick="addTwoAway()">
+                        +2
+                    </button>
+                    <button
+                        class="plus"
+                        id="three-away"
+                        onclick="addThreeAway()"
+                    >
+                        +3
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="reset-div">
-      <button id="reset" onclick="reset()">Reset</button>
-    </div>
-    <div class="word-box">
-      <p id="points-words"></p>
-    </div>
-    <script src="index.js"></script>
-  </body>
+        <div class="reset-div">
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+        <div class="word-box">
+            <p id="points-words"></p>
+        </div>
+        <script src="index.js"></script>
+    </body>
 </html>
